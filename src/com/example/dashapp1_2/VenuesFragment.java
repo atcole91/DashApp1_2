@@ -35,10 +35,10 @@ public class VenuesFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
-		String[] Venues = { "STK" , "STK Rooftop" , "Tenjune" , "Bagatelle" , "Charlemagne" };
-		Venue v1 = new Venue("STK","26th Little West 12th St", "@drawable/ic_launcher");
-		Venue v2 = new Venue("STK Rooftop","26th Little West 12th St", "@drawable/ic_launcher");
-		Venue v3 = new Venue("Tenjune","26th Little West 12th St", "@drawable/ic_launcher");
+		
+		final Venue v1 = new Venue("STK","26th Little West 12th St", "@drawable/ic_launcher");
+		final Venue v2 = new Venue("STK Rooftop","26th Little West 12th St", "@drawable/ic_launcher");
+		final Venue v3 = new Venue("Tenjune","26th Little West 12th St", "@drawable/ic_launcher");
 		
 		List<Venue> venues = new ArrayList<Venue>();
 		
@@ -56,7 +56,17 @@ public class VenuesFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
 				Intent intent = new Intent(context , VenueInfo.class);
-				intent.putExtra("new_variable_name","value");
+				switch (position) {
+				case 0: 
+					intent.putExtra("new_variable_name", v1.getName());
+					break;
+				case 1 :
+					intent.putExtra("new_variable_name",  v2.getName());
+					break;
+				case 2:
+					intent.putExtra("new_variable_name",  v3.getName());
+				}
+					
 				startActivity(intent);
 			}
 		});
