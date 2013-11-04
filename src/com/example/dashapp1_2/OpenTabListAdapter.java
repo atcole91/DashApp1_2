@@ -47,18 +47,18 @@ public class OpenTabListAdapter extends ArrayAdapter{
 
 		    if (p != null) {
 
-		        TextView tt = (TextView) v.findViewById(R.id.Name);
-		        TextView tt1 = (TextView) v.findViewById(R.id.Address);
+		        TextView tt = (TextView) v.findViewById(R.id.username);
+		        TextView tt1 = (TextView) v.findViewById(R.id.venueName);
 		        ImageView tt3 = (ImageView) v.findViewById(R.id.icon);
 		        String uri = p.getVenue().getImageLocation();
 		        int imageResource = context.getResources().getIdentifier(uri, null, context.getPackageName());
 
 		        if (tt != null) {
-		            tt.setText(p.getVenue().getName());
+		            tt.setText(p.getUser());
 		        }
 		        if (tt1 != null) {
 
-		            tt1.setText(p.getVenue().getAddress());
+		            tt1.setText(p.getVenue().getName());
 		        }
 		        if (tt3 != null) {
 		        	

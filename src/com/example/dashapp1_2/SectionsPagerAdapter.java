@@ -24,7 +24,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         case 0:
         	
             // Venues fragment activity
-            return new VenuesFragment();
+            return new VenuesFragment(context);
         case 1:
             // Open Tabs fragment activity
             return new OpenTabsFragment();
