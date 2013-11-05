@@ -58,13 +58,14 @@ public class VenuesFragment extends Fragment {
 				Intent intent = new Intent(context , VenueInfo.class);
 				switch (position) {
 				case 0: 
-					intent.putExtra("new_variable_name", v1.getName());
+					// intent.putExtra("Name", v1.getName());
+					intent.putExtra("Venue",  v1 );
 					break;
 				case 1 :
-					intent.putExtra("new_variable_name",  v2.getName());
+					intent.putExtra("Venue",  v2 );
 					break;
 				case 2:
-					intent.putExtra("new_variable_name",  v3.getName());
+					intent.putExtra("Venue",  v3 );
 				}
 					
 				startActivity(intent);

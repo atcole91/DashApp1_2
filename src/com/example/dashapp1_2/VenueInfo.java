@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class VenueInfo extends Activity{
-	 String value;
+	 String name;
+	 Venue venue;
 	
 	@Override
 	
@@ -15,10 +16,11 @@ public class VenueInfo extends Activity{
 		
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
-		    this.value = extras.getString("new_variable_name");
+		   //  this.name = extras.getString("Name");
+		    this.venue = (Venue) extras.getParcelable("Venue");
 		}
 		
-		Toast toast = Toast.makeText(getBaseContext(), this.value, 200);
+		Toast toast = Toast.makeText(getBaseContext(), this.venue.getName(), 200);
 		toast.show();
 		
 	}
