@@ -1,11 +1,16 @@
 package com.example.dashapp1_2;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.dashapp1_2.R;
 
@@ -13,6 +18,7 @@ import com.example.dashapp1_2.R;
 public class VenueInfo extends Activity{
 	 String name;
 	 Venue venue;
+	 Button openTabButton;
 	 
 	
 	@Override
@@ -23,20 +29,23 @@ public class VenueInfo extends Activity{
 		
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
-		   //  this.name = extras.getString("Name");
 		    this.venue = (Venue) extras.getParcelable("Venue");
 		}
 		
-		//Toast toast = Toast.makeText(getBaseContext(), this.venue.getName(), 200);
-		// toast.show();
-	     
 		String uri = venue.getImageLocation();
 		
 	    int imageResource = getBaseContext().getResources().getIdentifier(uri , null , getBaseContext().getPackageName());
-	    Toast toast = Toast.makeText(getBaseContext(), String.valueOf(imageResource), 200);
-	    toast.show();
+	    
 	    Drawable res = getResources().getDrawable(imageResource);
 		image.setImageDrawable(res);
+		
+		this.openTabButton = (Button)this.findViewById(R.id.openATab);
+		this.openTabButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Toast toast = Toast.makeText(getBaseContext(), "You cannot open a tab here, remember what happened last time?", 600);
+        	    toast.show();
+            }
+        });
 		
 	}
 	

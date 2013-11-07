@@ -8,4 +8,8 @@
     <string name="title_section3">Settings</string>
 	<string name="icon">Icon</string>
 	<string name="venueImage">Venue Image</string>
+	<string name="openATab">Open A Tab Here!</string>
+	<string name="firstName">First Name</string>
+	<string name="lastName">Last Name</string>
+	<string name="email">Email</string>
 </resources>

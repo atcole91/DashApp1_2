@@ -30,7 +30,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             return new OpenTabsFragment();
         case 2:
             // Settings fragment activity
-            return new SettingsFragment();
+            return new SettingsFragment(context);
         }
  
         return null;

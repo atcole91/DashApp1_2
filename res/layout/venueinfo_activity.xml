@@ -20,5 +20,11 @@
         android:layout_height="wrap_content">
         
     </TextView>
+    
+    <Button android:id="@+id/openATab"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="@string/openATab" />
 
 </LinearLayout>

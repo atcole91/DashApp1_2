@@ -63,7 +63,9 @@ public class CustomListAdapter extends ArrayAdapter {
 	            tt1.setText(p.getAddress());
 	        }
 	        if (tt3 != null) {
-	        	tt3.setImageResource(imageResource);
+	        	// use this when I upload thumbnail versions of the venues
+	        	// tt3.setImageResource(imageResource);
+	        	tt3.setImageResource(R.drawable.ic_launcher);
 	        }
 	    }
 	    return v;
