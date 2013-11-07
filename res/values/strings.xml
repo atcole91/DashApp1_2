@@ -7,4 +7,5 @@
     <string name="title_section2">Open Tabs</string>
     <string name="title_section3">Settings</string>
 	<string name="icon">Icon</string>
+	<string name="venueImage">Venue Image</string>
 </resources>

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CustomListAdapter extends ArrayAdapter {
 
@@ -53,20 +54,16 @@ public class CustomListAdapter extends ArrayAdapter {
 	        TextView tt1 = (TextView) v.findViewById(R.id.Address);
 	        ImageView tt3 = (ImageView) v.findViewById(R.id.icon);
 	        String uri = p.getImageLocation();
-	        int imageResource = context.getResources().getIdentifier(uri, null, context.getPackageName());
-
+	        int imageResource = context.getResources().getIdentifier(uri, "drawable", context.getPackageName());
+			
 	        if (tt != null) {
 	            tt.setText(p.getName());
 	        }
 	        if (tt1 != null) {
-
 	            tt1.setText(p.getAddress());
 	        }
 	        if (tt3 != null) {
-	        	
-	        	Drawable res = context.getResources().getDrawable(imageResource);
-	        	tt3.setImageDrawable(res);
-	            
+	        	tt3.setImageResource(imageResource);
 	        }
 	    }
 	    return v;

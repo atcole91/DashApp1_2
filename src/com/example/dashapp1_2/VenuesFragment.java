@@ -36,9 +36,9 @@ public class VenuesFragment extends Fragment {
 			Bundle savedInstanceState) {
 		
 		
-		final Venue v1 = new Venue("STK","26th Little West 12th St", "@drawable/ic_launcher");
-		final Venue v2 = new Venue("STK Rooftop","26th Little West 12th St", "@drawable/ic_launcher");
-		final Venue v3 = new Venue("Tenjune","26th Little West 12th St", "@drawable/ic_launcher");
+		final Venue v1 = new Venue("STK","26th Little West 12th St", "@drawable/stk");
+		final Venue v2 = new Venue("STK Rooftop","26th Little West 12th St", "@drawable/stkrooftop");
+		final Venue v3 = new Venue("Tenjune","26th Little West 12th St", "@drawable/tenjne");
 		
 		List<Venue> venues = new ArrayList<Venue>();
 		
