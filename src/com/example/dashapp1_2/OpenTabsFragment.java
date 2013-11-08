@@ -21,7 +21,7 @@ public  class OpenTabsFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		List<Tab> tabs = new ArrayList<Tab>();
-		Tab tab1 = new Tab(new Venue("STK Rooftop", "26th Little West 12th Street","@drawable/ic_launcher"), "Andrew Cole");
+		Tab tab1 = new Tab(new Venue("STK Rooftop", "26th Little West 12th Street","@drawable/ic_launcher"), "Andrew Cole", null);
 		
 		tabs.add(tab1);
 		

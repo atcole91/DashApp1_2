@@ -5,9 +5,9 @@ import android.os.Parcelable;
 
 public class Venue implements Parcelable {
 
-	final String name;
-	final String address;
-	final String imageLocation;
+	 String name;
+	 String address;
+	 String imageLocation;
 	
 	public Venue(String n, String a, String imgLoc ) {
 		this.name = n;
@@ -28,14 +28,23 @@ public class Venue implements Parcelable {
 		return this.name;
 		
 	}
+	public void setName(String s) {
+		this.name = s;
+	}
 	
 	public String getAddress() {
 		return this.address;
 		
 	}
+	public void setAddress(String s) {
+		this.name = s;
+	}
 	
 	public String getImageLocation() {
 		return this.imageLocation;
+	}
+	public void setImageLocation(String s) {
+		this.name = s;
 	}
 
 	@Override
