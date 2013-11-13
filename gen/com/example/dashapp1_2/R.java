@@ -27,34 +27,36 @@ public final class R {
         public static final int tenjne=0x7f020003;
     }
     public static final class id {
-        public static final int Address=0x7f08000b;
-        public static final int Name=0x7f08000c;
-        public static final int action_settings=0x7f08000f;
-        public static final int email=0x7f080006;
-        public static final int firstName=0x7f080004;
-        public static final int icon=0x7f080008;
-        public static final int lastName=0x7f080005;
-        public static final int nameandemail=0x7f080003;
-        public static final int openATab=0x7f08000e;
-        public static final int opentabs_listview=0x7f080002;
+        public static final int Address=0x7f08000c;
+        public static final int Name=0x7f08000d;
+        public static final int action_settings=0x7f080010;
+        public static final int email=0x7f080007;
+        public static final int firstName=0x7f080005;
+        public static final int icon=0x7f080009;
+        public static final int lastName=0x7f080006;
+        public static final int nameandemail=0x7f080004;
+        public static final int openATab=0x7f08000f;
+        public static final int opentabs_listview=0x7f080003;
         public static final int pager=0x7f080000;
-        public static final int section_label=0x7f080001;
-        public static final int username=0x7f080009;
-        public static final int venueInfoImage=0x7f08000d;
-        public static final int venueName=0x7f08000a;
-        public static final int venues_listview=0x7f080007;
+        public static final int section_label=0x7f080002;
+        public static final int text1=0x7f080001;
+        public static final int username=0x7f08000a;
+        public static final int venueInfoImage=0x7f08000e;
+        public static final int venueName=0x7f08000b;
+        public static final int venues_listview=0x7f080008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_main_dummy=0x7f030001;
-        public static final int fragment_open_tabs=0x7f030002;
-        public static final int fragment_settings=0x7f030003;
-        public static final int fragment_venues=0x7f030004;
-        public static final int open_tabs_list=0x7f030005;
-        public static final int settings_listview=0x7f030006;
-        public static final int venue_list=0x7f030007;
-        public static final int venueinfo_activity=0x7f030008;
-        public static final int venueinfo_main=0x7f030009;
+        public static final int activity_viewtab=0x7f030001;
+        public static final int fragment_main_dummy=0x7f030002;
+        public static final int fragment_open_tabs=0x7f030003;
+        public static final int fragment_settings=0x7f030004;
+        public static final int fragment_venues=0x7f030005;
+        public static final int open_tabs_list=0x7f030006;
+        public static final int settings_listview=0x7f030007;
+        public static final int venue_list=0x7f030008;
+        public static final int venueinfo_activity=0x7f030009;
+        public static final int venueinfo_main=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f070000;
